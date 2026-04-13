@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晶石建材 - 专业砂石料供应商</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        accent: '#FF7D00',
+                        dark: '#1D2129',
+                        light: '#F5F7FA',
+                        green: '#00B42A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .transition-all-300 {
+                transition: all 0.3s ease;
+            }
+            .hover-scale {
+                transition: transform 0.3s ease;
+            }
+            .hover-scale:hover {
+                transform: scale(1.03);
+            }
+            .card-shadow {
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            }
+        }
+    </style>
+</head>
+<body class="bg-light font-sans">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="晶石建材" class="h-10 mt-[3px]">
+                </div>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-dark hover:text-primary font-medium transition-all-300">首页</a>
+                    <a href="#about" class="text-dark hover:text-primary font-medium transition-all-300">关于我们</a>
+                    <a href="#strength" class="text-dark hover:text-primary font-medium transition-all-300">公司实力</a>
+                    <a href="#products" class="text-dark hover:text-primary font-medium transition-all-300">产品中心</a>
+                    <a href="#testimonials" class="text-dark hover:text-primary font-medium transition-all-300">客户评价</a>
+                    <a href="#contact" class="text-dark hover:text-primary font-medium transition-all-300">联系我们</a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-dark focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 移动端导航菜单 -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-dark hover:text-primary">首页</a>
+                <a href="#about" class="block py-2 text-dark hover:text-primary">关于我们</a>
+                <a href="#strength" class="block py-2 text-dark hover:text-primary">公司实力</a>
+                <a href="#products" class="block py-2 text-dark hover:text-primary">产品中心</a>
+                <a href="#testimonials" class="block py-2 text-dark hover:text-primary">客户评价</a>
+                <a href="#contact" class="block py-2 text-dark hover:text-primary">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页轮播 -->
+    <section id="home">
+        <div class="swiper mySwiper h-[80vh]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide relative">
+                    <img src="https://picsum.photos/seed/quarry1/1920/1080" alt="砂石料生产基地" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center">
+                        <div class="container mx-auto px-4">
+                            <div class="max-w-3xl">
+                                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 text-shadow">
+                                    石全石美 · 筑就精品
+                                </h1>
+                                <p class="text-xl text-white mb-8">
+                                    专业砂石料供应商，为您的建筑项目提供高品质建材
+                                </p>
+                                <a href="#products" class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-full transition-all-300 inline-block">
+                                    产品中心
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="https://picsum.photos/seed/quarry2/1920/1080" alt="现代化生产线" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center">
+                        <div class="container mx-auto px-4">
+                            <div class="max-w-3xl">
+                                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 text-shadow">
+                                    智能生产 · 品质保障
+                                </h1>
+                                <p class="text-xl text-white mb-8">
+                                    全封闭生产线，零粉尘排放，确保每一粒砂石的品质
+                                </p>
+                                <a href="#strength" class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-full transition-all-300 inline-block">
+                                    了解实力
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="https://picsum.photos/seed/mountains/1920/1080" alt="物流运输" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center">
+                        <div class="container mx-auto px-4">
+                            <div class="max-w-3xl">
+                                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 text-shadow">
+                                    高效配送 · 及时到位
+                                </h1>
+                                <p class="text-xl text-white mb-8">
+                                    50+运输车队，保障及时配送，不耽误您的工期
+                                </p>
+                                <a href="#products" class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-full transition-all-300 inline-block">
+                                    产品中心
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">关于我们</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="bg-light rounded-lg p-8 mb-12 shadow-lg">
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    晶石建材专注高品质砂石料供应，严选天然矿石原料，经标准化工艺加工，颗粒均匀、坚固耐用，适配各类基建与建筑项目。以稳定产能、高效配送为核心，为客户提供可靠建材保障，用如晶石般的品质，筑牢每一项精品工程。
+                </p>
+                <ul class="text-gray-600 space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-primary font-bold mr-2">•</span>
+                        <span>公司成立于2023-06-20</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-primary font-bold mr-2">•</span>
+                        <span>注册资本为500万元</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-primary font-bold mr-2">•</span>
+                        <span>位于湖北省咸宁市赤壁市中伙铺镇洪水铺村原砖瓦厂</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-primary font-bold mr-2">•</span>
+                        <span>资质齐全：营业执照、安全生产许可证、环保验收、质量认证</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-primary font-bold mr-2">•</span>
+                        <span>服务房建、市政、公路、铁路、水利等工程</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="about.jpg" alt="晶石建材" class="rounded-lg shadow-lg w-full hover-scale" loading="lazy" decoding="async">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-dark mb-4">石全石美 · 筑就精品</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        晶石建材专注高品质砂石料供应，严选天然矿石原料，经标准化工艺加工，颗粒均匀、坚固耐用，适配各类基建与建筑项目。
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        以稳定产能、高效配送为核心，为客户提供可靠建材保障，用如晶石般的品质，筑牢每一项精品工程。
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-green text-xl mr-2"></i>
+                            <span class="text-gray-700">全封闭生产线</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-green text-xl mr-2"></i>
+                            <span class="text-gray-700">零粉尘排放</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-green text-xl mr-2"></i>
+                            <span class="text-gray-700">实时级配监控</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-green text-xl mr-2"></i>
+                            <span class="text-gray-700">全程溯源</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司实力 -->
+    <section id="strength" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">公司实力</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    我们拥有完善的生产体系和专业的团队，为客户提供高品质的砂石料产品和服务
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 生产基地 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg hover-scale card-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-industry text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">生产基地</h3>
+                    <p class="text-gray-600">
+                        2大生产基地，年产能超50万吨，确保稳定供应
+                    </p>
+                </div>
+                
+                <!-- 行业资质 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg hover-scale card-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-certificate text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">行业资质</h3>
+                    <p class="text-gray-600">
+                        拥有采矿许可、质量体系认证等多项资质，合规经营
+                    </p>
+                </div>
+                
+                <!-- 物流运输 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg hover-scale card-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-truck text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">物流运输</h3>
+                    <p class="text-gray-600">
+                        50+运输车队，保障及时配送，满足客户需求
+                    </p>
+                </div>
+                
+                <!-- 专业团队 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg hover-scale card-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">专业团队</h3>
+                    <p class="text-gray-600">
+                        专业技术团队，提供全程服务，确保产品质量
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品服务 -->
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">产品中心</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    我们提供多种规格的砂石料产品，满足不同建筑项目的需求
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- 产品1 -->
+                <div id="product-1" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product10.svg" alt="石粉" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质石粉</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            天然矿石研磨，碳酸钙含量高，白度好<br>
+                            适用场景：腻子涂料、混凝土填充<br>
+                            粒径：0-5mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品2 -->
+                <div id="product-2" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product2.svg" alt="瓜米" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质瓜米</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            天然卵石，粒形饱满<br>
+                            适用场景：高强度混凝土、沥青路面、建筑骨料<br>
+                            粒径：5-10mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品3 -->
+                <div id="product-3" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product3.svg" alt="优质1-2碎石" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质1-2碎石</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            天然岩石破碎，质地坚硬，抗压性强<br>
+                            适用场景：大型桥梁、高层建筑主体、混凝土浇筑<br>
+                            粒径：10-20mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品4 -->
+                <div id="product-4" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product4.svg" alt="优质1-3碎石" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质1-3碎石</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            原生岩石机械破碎，颗粒坚固，压碎指标低<br>
+                            适用场景：公路路基、铁路道砟、大体积混凝土基础<br>
+                            粒径：24-31.5mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品5 -->
+                <div id="product-5" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product5.svg" alt="优质水洗砂" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质水洗砂</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            天然河砂/机制砂经水洗脱泥，颗粒洁净，级配合理<br>
+                            适用场景：高标准混凝土、砂浆、预制构件生产<br>
+                            粒径：0-3mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品6 -->
+                <div id="product-6" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product6.svg" alt="优质混合料" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质混合料</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            科学级配，组分均匀，粘结性与稳定性俱佳<br>
+                            适用场景：市政道路铺设、机场跑道、高等级公路基层<br>
+                            粒径：0-36mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品7 -->
+                <div id="product-7" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product7.svg" alt="优质五八料" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质五八料</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            天然卵石破碎，粒形方正，质地坚硬<br>
+                            适用场景：房屋地基、路面垫层、小型混凝土工程<br>
+                            粒径：50-80mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品8 -->
+                <div id="product-8" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product8.svg" alt="优质护坡石" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质护坡石</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            天然山石开采，质地坚硬，抗风化耐腐蚀<br>
+                            适用场景：河道治理、堤坝加固、园林景观驳岸<br>
+                            粒径：200-800mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品9 -->
+                <div id="product-9" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product9.svg" alt="优质抛江石" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质抛江石</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            原生岩体爆破开采，块体浑厚，高硬度抗冲刷<br>
+                            适用场景：江河堤防加固、深泓线护底、崩岸应急治理<br>
+                            粒径：400-1000mm<br>
+                            含泥量：≤1%
+                        </p>
+
+                    </div>
+                </div>
+                
+                <!-- 产品10 -->
+                <div id="product-10" class="bg-light rounded-lg overflow-hidden shadow-lg hover-scale card-shadow">
+                    <img src="product1.svg" alt="优质渣石" class="w-full h-52 object-contain p-4 bg-white">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-dark mb-2">优质渣石</h3>
+                        <p class="text-gray-600 mb-3 text-sm">
+                            尾矿渣石精选，质地密实，强度高<br>
+                            适用场景：建筑地基填充、道路垫层、再生骨料生产<br>
+                            粒径：20-300mm<br>
+                            含泥量：≤20%
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 绿色环保 -->
+    <section class="py-20 bg-green/10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl md:text-3xl font-bold text-dark mb-4">不止于开采，更在于守护</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        我们注重环境保护，采用先进的环保技术和设备，实现零粉尘排放，减少对环境的影响。
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        通过循环水洗技术，我们不仅提高了砂石的品质，还减少了水资源的浪费，实现了可持续发展。
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fa fa-leaf text-green text-xl mr-2"></i>
+                            <span class="text-gray-700">环保开采</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-tint text-green text-xl mr-2"></i>
+                            <span class="text-gray-700">循环用水</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-recycle text-green text-xl mr-2"></i>
+                            <span class="text-gray-700">资源回收</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-tree text-green text-xl mr-2"></i>
+                            <span class="text-gray-700">生态修复</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/seed/eco/1200/800" alt="绿色环保" class="rounded-lg shadow-lg w-full hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section id="testimonials" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">客户好评</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    听听我们的客户怎么说
+                </p>
+            </div>
+            
+            <div class="swiper testimonialsSwiper">
+                <div class="swiper-wrapper">
+                    <!-- 评价1 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">
+                            这批砂石质量真心不错，颗粒饱满均匀，浇筑混凝土强度完全达标，监理验收一次就过了，以后工地用料就认准这家了！
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold text-xl">张</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">张总</h4>
+                                <p class="text-gray-500 text-sm">建筑工程公司</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 评价2 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">
+                            供货速度太给力了，早上下单下午就到，从没耽误过工期，项目经理都夸我找对了供应商，合作这么久一直很省心！
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold text-xl">王</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">王总</h4>
+                                <p class="text-gray-500 text-sm">房地产开发公司</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 评价3 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">
+                            做市政道路用的砂石，含泥量控制得很好，检测报告齐全规范，资质也正规，项目验收完全没问题，甲方很满意！
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold text-xl">李</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">李总</h4>
+                                <p class="text-gray-500 text-sm">市政工程公司</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 评价4 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic">
+                            市政工程对材料要求严，这家砂石不仅质量过硬，价格还比市场价低不少，性价比真的高，已经推荐给好几个同行了！
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold text-xl">刘</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">刘总</h4>
+                                <p class="text-gray-500 text-sm">建筑材料公司</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 销售流程 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">下单流程</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    简单几步，轻松完成采购
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center items-stretch gap-8 md:gap-0">
+                <!-- 流程1 -->
+                <div class="flex flex-col items-center md:relative w-full md:w-1/5 p-4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-comments text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2 text-center">客户咨询</h3>
+                    <p class="text-gray-600 text-center text-sm max-w-xs">
+                        通过电话、邮件或在线咨询了解产品信息
+                    </p>
+                    <div class="hidden md:block absolute top-[42px] right-0 text-primary text-2xl transform -translate-y-1/2">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- 流程2 -->
+                <div class="flex flex-col items-center md:relative w-full md:w-1/5 p-4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2 text-center">需求评估</h3>
+                    <p class="text-gray-600 text-center text-sm max-w-xs">
+                        根据您的项目需求，评估合适的产品规格和数量
+                    </p>
+                    <div class="hidden md:block absolute top-[42px] right-0 text-primary text-2xl transform -translate-y-1/2">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- 流程3 -->
+                <div class="flex flex-col items-center md:relative w-full md:w-1/5 p-4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-file-text text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2 text-center">方案报价</h3>
+                    <p class="text-gray-600 text-center text-sm max-w-xs">
+                        提供详细的产品方案和价格报价
+                    </p>
+                    <div class="hidden md:block absolute top-[42px] right-0 text-primary text-2xl transform -translate-y-1/2">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- 流程4 -->
+                <div class="flex flex-col items-center md:relative w-full md:w-1/5 p-4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-pencil text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2 text-center">合同签订</h3>
+                    <p class="text-gray-600 text-center text-sm max-w-xs">
+                        确认方案后签订采购合同
+                    </p>
+                    <div class="hidden md:block absolute top-[42px] right-0 text-primary text-2xl transform -translate-y-1/2">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <!-- 流程5 -->
+                <div class="flex flex-col items-center w-full md:w-1/5 p-4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-truck text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2 text-center">发货与售后</h3>
+                    <p class="text-gray-600 text-center text-sm max-w-xs">
+                        安排物流配送，提供售后服务
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">常见问题</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    解答您的疑惑
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- 问题1 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full flex justify-between items-center bg-white p-4 rounded-lg shadow-md hover:bg-gray-50 transition-all-300">
+                        <h3 class="font-bold text-dark">质量与成本</h3>
+                        <i class="fa fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-4 rounded-b-lg shadow-md mt-1">
+                        <p class="text-gray-600 mb-4">
+                            <strong>含泥量、针片状含量、粒径：</strong>这些指标直接决定了混凝土的强度、工作性能（如流动性、可泵性）和耐久性。指标不合格会导致混凝土强度下降、易开裂、堵泵甚至爆管，给施工方带来巨大的质量风险和返工成本。
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>含水率：</strong>含水率波动会直接影响混凝土的配比，导致每盘混凝土的坍落度（流动性）不稳定，影响施工质量和强度。客户需要供应商能稳定控制含水率，以减少他们自己调整配比的麻烦和风险。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 问题2 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full flex justify-between items-center bg-white p-4 rounded-lg shadow-md hover:bg-gray-50 transition-all-300">
+                        <h3 class="font-bold text-dark">供应与合规</h3>
+                        <i class="fa fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-4 rounded-b-lg shadow-md mt-1">
+                        <p class="text-gray-600 mb-4">
+                            <strong>生产规模与原料合规性：</strong>客户需要确保供应商是合法、稳定运营的大型企业，而不是随时可能因环保或安全问题被关停的小作坊。这关系到长期、稳定的货源供应，避免因断供导致项目停工。
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>市场供需：</strong>了解市场整体情况有助于客户预判价格走势和供应紧张程度，从而更好地进行采购规划和成本控制。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 问题3 -->
+                <div class="mb-6">
+                    <button class="faq-toggle w-full flex justify-between items-center bg-white p-4 rounded-lg shadow-md hover:bg-gray-50 transition-all-300">
+                        <h3 class="font-bold text-dark">技术风险</h3>
+                        <i class="fa fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden bg-white p-4 rounded-b-lg shadow-md mt-1">
+                        <p class="text-gray-600">
+                            砂石的级配、粒形、坚固性等指标会直接影响混凝土的性能。如果选择了不合适的砂石，可能会导致混凝土强度不足、耐久性差、收缩裂缝等问题，增加工程风险和后期维护成本。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">联系我们</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    如有任何疑问或需求，欢迎随时联系我们
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-light p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-dark mb-6">联系方式</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-map-marker text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">公司地址</h4>
+                                <p class="text-gray-600">湖北省赤壁市中伙铺镇洪水铺村原砖瓦厂</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-phone text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">销售咨询</h4>
+                                <p class="text-gray-600">17371671999</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-envelope text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">商务合作</h4>
+                                <p class="text-gray-600">yindiguang@qq.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-clock-o text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">咨询时间</h4>
+                                <p class="text-gray-600">9:00 - 18:00（工作日）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold text-dark mb-4">关注我们</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all-300">
+                                <i class="fa fa-weixin text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all-300">
+                                <i class="fa fa-weibo text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all-300">
+                                <i class="fa fa-qq text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-xl font-bold">晶石建材</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        专业砂石料供应商，为您的建筑项目提供高品质建材
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-all-300">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-all-300">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-all-300">
+                            <i class="fa fa-qq"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-all-300">首页</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-all-300">关于我们</a></li>
+                        <li><a href="#strength" class="text-gray-400 hover:text-primary transition-all-300">公司实力</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-primary transition-all-300">产品服务</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-primary transition-all-300">客户评价</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-all-300">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">产品中心</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#product-1" class="text-gray-400 hover:text-primary transition-all-300">优质石粉</a></li>
+                        <li><a href="#product-2" class="text-gray-400 hover:text-primary transition-all-300">优质瓜米</a></li>
+                        <li><a href="#product-3" class="text-gray-400 hover:text-primary transition-all-300">优质1-2碎石</a></li>
+                        <li><a href="#product-4" class="text-gray-400 hover:text-primary transition-all-300">优质1-3碎石</a></li>
+                        <li><a href="#product-5" class="text-gray-400 hover:text-primary transition-all-300">优质水洗砂</a></li>
+                        <li><a href="#product-6" class="text-gray-400 hover:text-primary transition-all-300">优质混合料</a></li>
+                        <li><a href="#product-7" class="text-gray-400 hover:text-primary transition-all-300">优质五八料</a></li>
+                        <li><a href="#product-8" class="text-gray-400 hover:text-primary transition-all-300">优质护坡石</a></li>
+                        <li><a href="#product-9" class="text-gray-400 hover:text-primary transition-all-300">优质抛江石</a></li>
+                        <li><a href="#product-10" class="text-gray-400 hover:text-primary transition-all-300">优质渣石</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">联系我们</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">湖北省赤壁市中伙铺镇洪水铺村原砖瓦厂</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-phone text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">16666666666</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-envelope text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">xxxx@qq.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-clock-o text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">9:00 - 18:00（工作日）</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    Copyright © 2026 赤壁晶石建材有限公司 All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+                    京ICP备10000000号-25 | 京公网安备11010502000000号
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 右侧悬浮联系电话 -->
+    <div class="fixed right-4 top-1/2 transform -translate-y-1/2 bg-primary text-white p-4 rounded-full shadow-lg z-50">
+        <a href="tel:17371671999" class="flex items-center justify-center">
+            <i class="fa fa-phone text-xl mr-2"></i>
+            <span class="hidden md:inline">17371671999</span>
+        </a>
+    </div>
+    
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 z-50">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 轮播初始化
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // 评价轮播初始化
+        var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        // 返回顶部按钮
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    // 关闭移动端菜单
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // 常见问题交互
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                // 切换内容显示/隐藏
+                content.classList.toggle('hidden');
+                
+                // 切换图标
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('fa-minus', 'rotate-45');
+                    icon.classList.add('fa-plus');
+                } else {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus', 'rotate-45');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
