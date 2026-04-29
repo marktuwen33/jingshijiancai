@@ -59,16 +59,16 @@ Write-Host "======================" -ForegroundColor Yellow
 
 # Product list
 $products = @(
-    @{ Input = "product1.jpg"; Output = "product1.jpg" },
-    @{ Input = "product2.jpg"; Output = "product2.jpg" },
-    @{ Input = "product3.jpg"; Output = "product3.jpg" },
-    @{ Input = "product4.jpg"; Output = "product4.jpg" },
-    @{ Input = "product5.jpg"; Output = "product5.jpg" },
-    @{ Input = "product6.jpg"; Output = "product6.jpg" },
-    @{ Input = "product7.jpg"; Output = "product7.jpg" },
-    @{ Input = "product8.jpeg"; Output = "product8.jpg" },
-    @{ Input = "product9.jpg"; Output = "product9.jpg" },
-    @{ Input = "product10.jpg"; Output = "product10.jpg" }
+    @{ Input = "product1.jpg"; Output = "product1_resized.jpg" },
+    @{ Input = "product2.jpg"; Output = "product2_resized.jpg" },
+    @{ Input = "product3.jpg"; Output = "product3_resized.jpg" },
+    @{ Input = "product4.jpg"; Output = "product4_resized.jpg" },
+    @{ Input = "product5.jpg"; Output = "product5_resized.jpg" },
+    @{ Input = "product6.jpg"; Output = "product6_resized.jpg" },
+    @{ Input = "product7.jpg"; Output = "product7_resized.jpg" },
+    @{ Input = "product8.jpeg"; Output = "product8_resized.jpg" },
+    @{ Input = "product9.jpg"; Output = "product9_resized.jpg" },
+    @{ Input = "product10.jpg"; Output = "product10_resized.jpg" }
 )
 
 # Process each product

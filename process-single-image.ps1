@@ -5,8 +5,8 @@ Add-Type -AssemblyName System.Drawing
 
 Write-Host "Processing image..." -ForegroundColor Yellow
 
-$inputImage = "product1.jpg"
-$outputImage = "product1_resized.jpg"
+$inputImage = "product12.jpg"
+$outputImage = "product12_resized.jpg"
 $width = 400
 $height = 300
 
